@@ -13,9 +13,9 @@ mypath() {
 
 if [ -f "$1" ] && [ $# -eq 3 ]
 then
-echo > $1
-mypath $1 $2 $3
-sort -o $1 $1
+	echo > $1
+	mypath $1 $2 $3
+	sort -o $1 $1
 else
-echo "Wrong count of arguments or Output way is not file"
+	echo "Wrong count of arguments or Output way is not file"
 fi
